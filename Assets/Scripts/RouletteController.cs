@@ -18,5 +18,8 @@ public class RouletteController : MonoBehaviour {
 
         // 旋轉速度、讓輪盤旋轉
         transform.Rotate(0, 0, this._rotSpeed);
+
+        // 讓輪盤減速
+        this._rotSpeed *= 0.96f;
     }
 }
